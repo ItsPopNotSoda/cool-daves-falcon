@@ -49,3 +49,37 @@ function updateCountdown() {
 updateCountdown();
 
 setInterval(updateCountdown, 1000);
+
+const falcon = document.querySelector(".falcon-mark");
+
+document.addEventListener("mousemove", (event) => {
+
+    if (!falcon) {
+        return;
+    }
+
+    const rect = falcon.getBoundingClientRect();
+
+    const falconCenterX = rect.left + rect.width / 2;
+    const falconCenterY = rect.top + rect.height / 2;
+
+    const deltaX = event.clientX - falconCenterX;
+    const deltaY = event.clientY - falconCenterY;
+
+    const distanceX = Math.max(-6, Math.min(6, deltaX / 40));
+    const distanceY = Math.max(-6, Math.min(6, deltaY / 40));
+
+    /*
+       Reverse the offset so the glow appears
+       on the side facing the cursor.
+    */
+    falcon.style.setProperty(
+        "--light-x",
+        `${-distanceX}px`
+    );
+
+    falcon.style.setProperty(
+        "--light-y",
+        `${-distanceY}px`
+    );
+});
