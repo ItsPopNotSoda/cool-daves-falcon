@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cool Dave's Falcon</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="case-file">
+
+        <div class="case-number">
+            CASE FILE 1209
+        </div>
+
+        <h1>COOL DAVE'S FALCON</h1>
+
+        <p class="subtitle">
+            THE MALTESE FALCON
+        </p>
+
+        <p class="anniversary">
+            85TH ANNIVERSARY
+        </p>
+
+        <svg
+    class="falcon-mark"
+    viewBox="0 0 220 220"
+    aria-hidden="true"
+>
+    <defs>
+        <linearGradient id="falconMetal" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#4b4332" />
+            <stop offset="22%" stop-color="#25231b" />
+            <stop offset="58%" stop-color="#0f1010" />
+            <stop offset="100%" stop-color="#030303" />
+        </linearGradient>
+    </defs>
+
+    <!-- Main statue silhouette -->
+    <path
+        d="
+        M106 28
+
+        C120 23 135 27 144 37
+        C149 42 151 49 149 56
+
+        L168 52
+        L153 63
+        L161 67
+        L145 68
+
+        C140 76 137 82 137 88
+
+        C157 97 169 117 172 143
+        L176 172
+
+        C158 187 136 194 110 194
+        C83 194 61 187 44 172
+
+        L48 143
+        C51 116 63 97 84 87
+
+        C84 76 87 64 93 54
+        C96 44 99 34 106 28
+        Z"
+        fill="url(#falconMetal)"
+    />
+
+    <!-- Left wing definition -->
+    <path
+        d="
+        M83 91
+        C66 108 61 129 61 160
+        C69 171 78 178 90 182
+        C86 156 87 126 95 99
+        Z"
+        fill="#080909"
+    />
+
+    <!-- Right wing definition -->
+    <path
+        d="
+        M135 91
+        C153 108 159 130 158 160
+        C150 171 141 178 129 182
+        C134 155 132 126 124 99
+        Z"
+        fill="#050606"
+    />
+
+    <!-- Subtle breast ridge -->
+    <path
+        d="
+        M110 88
+        C104 113 103 146 110 184
+        C116 147 116 113 110 88
+        Z"
+        fill="#15140f"
+        opacity="0.65"
+    />
+
+    <!-- Tail -->
+    <path
+        d="
+        M88 185
+        L105 204
+        L110 187
+        L116 204
+        L134 185
+        Z"
+        fill="#060707"
+    />
+
+    <!-- Feet -->
+    <path
+        d="
+        M90 190 L88 200
+        M101 191 L100 201
+        M119 191 L120 201
+        M130 190 L132 200
+        "
+        stroke="#8b6b32"
+        stroke-width="2"
+        stroke-linecap="round"
+    />
+
+    <!-- Pedestal -->
+    <path
+        d="
+        M71 201
+        H149
+        L160 215
+        H60
+        Z"
+        fill="#0d0d0b"
+        stroke="#8b6b32"
+        stroke-width="1"
+    />
+    </svg>
+
+        <div class="status">
+            CASE OPENED
+        </div>
+
+        <section class="countdown">
+
+            <div class="time-block">
+                <span id="days">00</span>
+                <small>DAYS</small>
+            </div>
+
+            <div class="time-block">
+                <span id="hours">00</span>
+                <small>HOURS</small>
+            </div>
+
+            <div class="time-block">
+                <span id="minutes">00</span>
+                <small>MINUTES</small>
+            </div>
+
+            <div class="time-block">
+                <span id="seconds">00</span>
+                <small>SECONDS</small>
+            </div>
+
+        </section>
+
+        <p class="appointment">
+            WEDNESDAY · DECEMBER 9 · 2026
+        </p>
+
+        <p class="pick">
+            COOL DAVE'S PICK
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

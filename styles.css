@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0b0c0c;
+    color: #e8ddc8;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.case-file {
+    width: min(900px, 92%);
+    text-align: center;
+
+    padding: 60px 30px;
+
+    border: 1px solid #9a7737;
+}
+
+.case-number {
+    font-family: "Courier New", monospace;
+    letter-spacing: 4px;
+    color: #9a7737;
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin: 0;
+
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    letter-spacing: 5px;
+}
+
+.subtitle {
+    margin-bottom: 5px;
+
+    letter-spacing: 6px;
+    color: #9a7737;
+}
+
+.anniversary {
+    margin-top: 0;
+
+    font-family: "Courier New", monospace;
+    letter-spacing: 3px;
+}
+
+.status {
+    display: inline-block;
+
+    margin: 12px 0 18px;
+    padding: 8px 18px;
+
+    border: 2px solid #741f1c;
+
+    color: #741f1c;
+
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+
+    transform: rotate(-2deg);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    margin: 22px 0;
+}
+
+.time-block {
+    min-width: 120px;
+}
+
+.time-block span {
+    display: block;
+
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+
+    color: #9a7737;
+}
+
+.time-block small {
+    font-family: "Courier New", monospace;
+
+    letter-spacing: 2px;
+}
+
+.appointment {
+    margin-top: 45px;
+
+    font-family: "Courier New", monospace;
+    letter-spacing: 2px;
+}
+
+.pick {
+    color: #9a7737;
+
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.falcon-mark {
+    display: block;
+    width: 135px;
+    height: auto;
+    margin: 8px auto 4px;
+    filter: drop-shadow(0 0 14px rgba(154, 119, 55, 0.18));
+    opacity: 0.96;
+}
